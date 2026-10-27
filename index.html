@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="A simple HTML5 starter page.">
+	<title>Welcome</title>
+	<style> 
+		:root {
+			color-scheme: light;
+			font-family: Georgia, "Times New Roman", serif;
+			color: #202a31;
+			background: #f4f6f3;
+		}
+
+		* {
+			box-sizing: border-box;
+		}
+
+		body {
+			min-height: 100vh;
+			margin: 0;
+			display: grid;
+			grid-template-rows: auto 1fr auto;
+		}
+
+		header,
+		footer {
+			padding: 1.25rem clamp(1.25rem, 6vw, 5rem);
+			background: #fff;
+		}
+
+		header {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			gap: 1rem;
+			border-bottom: 1px solid #dce3dc;
+		}
+
+		.brand {
+			color: inherit;
+			font-size: 1.1rem;
+			font-weight: 700;
+			text-decoration: none;
+		}
+
+		nav a {
+			color: #315f50;
+			text-decoration-thickness: 1px;
+			text-underline-offset: 0.2em;
+		}
+
+		main {
+			width: min(100% - 2.5rem, 56rem);
+			margin: 0 auto;
+			padding: clamp(4rem, 12vh, 8rem) 0;
+		}
+
+		main p {
+			max-width: 38rem;
+			color: #53615b;
+			font: 1.125rem/1.7 system-ui, sans-serif;
+		}
+
+		h1 {
+			max-width: 12ch;
+			margin: 0;
+			font-size: clamp(2.75rem, 8vw, 5.5rem);
+			line-height: 0.98;
+			font-weight: 500;
+		}
+
+		footer {
+			border-top: 1px solid #dce3dc;
+			color: #53615b;
+			font: 0.9rem/1.5 system-ui, sans-serif;
+		}
+
+		@media (max-width: 480px) {
+			header {
+				align-items: flex-start;
+				flex-direction: column;
+			}
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<!--
+        <a class="brand" href="#home">Your Site</a>
+		<nav aria-label="Main navigation">
+			<a href="#home">Home</a>
+		</nav>
+        -->
+	</header>
+
+	<main id="home">
+		<p>Personal tool that reads myown Gmail/Calendar/Drive</p>
+	</main>
+
+</body>
+</html>
